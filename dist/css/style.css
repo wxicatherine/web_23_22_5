@@ -1,0 +1,219 @@
+/* General styling */
+body {
+  font-family: "Arial", sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+.resume-container {
+  display: flex;
+  max-width: 900px;
+  margin: 20px auto;
+  background: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+/* Left Column */
+.left-column {
+  width: 60%;
+  padding: 20px;
+}
+
+/* Header */
+.header h1 {
+  color: rgb(11, 3, 3);
+  font-size: 30px;
+  margin-bottom: 5px;
+}
+
+.header h2 {
+  font-size: 18px;
+  font-weight: 400;
+  color: #555;
+}
+
+.header p {
+  font-size: 14px;
+  margin: 5px 0;
+}
+
+.icon {
+  margin-right: 5px;
+}
+
+/* About Section */
+.about h3 {
+  font-size: 22px;
+  margin-bottom: 10px;
+  border-bottom: 2px solid #030101;
+  padding-bottom: 5px;
+  color: #0d0403;
+}
+
+.about p {
+  font-size: 14px;
+  margin-bottom: 20px;
+  color: #666;
+}
+
+/* Education Section */
+.education h3 {
+  font-size: 22px;
+  margin-bottom: 10px;
+  border-bottom: 2px solid #090302;
+  padding-bottom: 5px;
+  color: #120604;
+}
+
+.education-item {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.left-smallcolumn {
+  width: 35%;
+}
+
+.right-smallcolumn {
+  width: 65%;
+}
+
+.education-item h6 {
+  font-size: 16px;
+  color: #333;
+}
+
+.education-item h5 {
+  font-size: 14px;
+  color: #f61010;
+}
+
+.education-item h4 {
+  font-size: 16px;
+  color: #333;
+}
+
+.education-item p {
+  font-size: 14px;
+  color: #666;
+}
+
+/* Job Experience Section */
+.experience h3 {
+  font-size: 22px;
+  margin-bottom: 10px;
+  border-bottom: 2px solid #0a0403;
+  padding-bottom: 5px;
+  color: #0d0504;
+}
+
+.experience-item {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.left-smallcolumn {
+  width: 35%;
+}
+
+.right-smallcolumn {
+  width: 65%;
+}
+
+.experience-item h6 {
+  font-size: 16px;
+  color: #333;
+}
+
+.experience-item h5 {
+  font-size: 14px;
+  color: #ef1717;
+}
+
+.experience-item h4 {
+  font-size: 16px;
+  color: #333;
+}
+
+.experience-item p {
+  font-size: 14px;
+  color: #666;
+}
+
+/* Right Column */
+.right-column {
+  width: 40%;
+  background-color: #f9f9f9;
+  padding: 20px;
+  text-align: center;
+}
+
+.photo img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.references h3, .skills h3, .languages h3, .hobbies h3 {
+  font-size: 22px;
+  margin-bottom: 10px;
+  border-bottom: 2px solid #000000;
+  padding-bottom: 5px;
+  color: #000000;
+}
+
+/* References Section */
+.references div {
+  margin-bottom: 20px;
+}
+
+.references h4 {
+  font-size: 16px;
+  color: #333;
+}
+
+.references h5 {
+  font-size: 14px;
+  color: hsl(0, 97%, 55%);
+}
+
+.references p {
+  font-size: 14px;
+  color: #666;
+}
+
+/* Skills Section */
+.skills ul {
+  list-style: none;
+  padding: 0;
+  text-align: left;
+}
+
+.skills ul li {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 5px;
+}
+
+/* Languages Section */
+.languages p {
+  font-size: 14px;
+  color: #666;
+}
+
+/* Hobbies Section */
+.hobbies ul {
+  list-style: none;
+  padding: 0;
+  text-align: left;
+}
+
+.hobbies ul li {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 5px;
+}
