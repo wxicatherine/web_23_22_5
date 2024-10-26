@@ -115,14 +115,6 @@ body {
   margin-bottom: 20px;
 }
 
-.left-smallcolumn {
-  width: 35%;
-}
-
-.right-smallcolumn {
-  width: 65%;
-}
-
 .experience-item h6 {
   font-size: 16px;
   color: #333;
@@ -151,6 +143,7 @@ body {
   text-align: center;
 }
 
+/* Photo */
 .photo img {
   width: 150px;
   height: 150px;
@@ -158,6 +151,7 @@ body {
   margin-bottom: 20px;
 }
 
+/* References, Skills, Languages, Hobbies Titles */
 .references h3, .skills h3, .languages h3, .hobbies h3 {
   font-size: 22px;
   margin-bottom: 10px;
@@ -167,12 +161,17 @@ body {
 }
 
 /* References Section */
+.references {
+  margin-bottom: 20px;
+}
+
 .references div {
   margin-bottom: 20px;
 }
 
 .references h4 {
-  font-size: 16px;
+  font-size: 14px;
+  font-weight: bold;
   color: #333;
 }
 
@@ -182,38 +181,85 @@ body {
 }
 
 .references p {
-  font-size: 14px;
+  font-size: 13px;
   color: #666;
+  margin: 2px 0;
 }
 
-/* Skills Section */
-.skills ul {
-  list-style: none;
-  padding: 0;
-  text-align: left;
+/* Skills, Languages, and Hobbies */
+.skills, .languages, .hobbies {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
 }
 
-.skills ul li {
-  font-size: 14px;
-  color: #666;
-  margin-bottom: 5px;
+.skills .skill-item, .languages .language-item, .hobbies .hobby-item {
+  margin-bottom: 15px;
 }
 
-/* Languages Section */
-.languages p {
-  font-size: 14px;
-  color: #666;
+/* Progress bars */
+.bar-container {
+  width: 100%;
+  background-color: #ddd;
+  border-radius: 15px;
+  margin-top: 5px;
 }
 
-/* Hobbies Section */
-.hobbies ul {
-  list-style: none;
-  padding: 0;
-  text-align: left;
+.bar {
+  height: 10px;
+  border-radius: 15px;
+  background-color: #e60000;
 }
 
-.hobbies ul li {
-  font-size: 14px;
-  color: #666;
-  margin-bottom: 5px;
+/* Circular Progress Bars for Languages */
+.circle-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.circle {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  position: relative;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+}
+
+.circle:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 8px solid #ddd;
+}
+
+.circle.english:before {
+  border-color: red transparent transparent transparent;
+  transform: rotate(342deg);
+}
+
+.circle.german:before {
+  border-color: red transparent transparent transparent;
+  transform: rotate(216deg);
+}
+
+.circle.spanish:before {
+  border-color: red transparent transparent transparent;
+  transform: rotate(162deg);
+}
+
+.label {
+  position: absolute;
+  bottom: -25px;
+  font-size: 16px;
+  color: #333;
 }
