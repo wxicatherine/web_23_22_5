@@ -31,7 +31,7 @@ body {
 /* Left Column */
 .left-column {
   width: 60%;
-  padding: 20px;
+  box-sizing: border-box;
 }
 
 /* Header */
@@ -73,9 +73,11 @@ body {
 }
 
 .about p {
-  font-size: 14px;
-  margin-bottom: 20px;
-  color: #666;
+  font-size: 15px;
+  line-height: 22px;
+  color: #232323;
+  font-family: "Raleway Roman";
+  text-align: left;
 }
 
 /* Education Section */
@@ -90,35 +92,53 @@ body {
 
 .education-item {
   display: flex;
-  margin-bottom: 20px;
+  align-items: flex-start; /* Выровнять содержимое по верхнему краю */
+  gap: 10px; /* Расстояние между колонками */
 }
 
 .left-smallcolumn {
-  width: 35%;
+  width: 30%; /* Измените при необходимости */
+  padding-right: 10px; /* Добавьте отступ справа */
+  box-sizing: border-box; /* Убедитесь, что отступы учитываются в ширине */
 }
 
 .right-smallcolumn {
-  width: 65%;
+  width: 70%; /* Измените при необходимости */
+  box-sizing: border-box;
 }
 
 .education-item h6 {
-  font-size: 16px;
-  color: #333;
+  font-size: 13px;
+  color: #232323;
+  font-weight: bold;
+  font-style: italic;
+  font-family: "Raleway Italic";
+  text-align: right;
 }
 
 .education-item h5 {
-  font-size: 14px;
-  color: #f61010;
+  font-size: 13px;
+  color: #e90000;
+  font-weight: bold;
+  font-family: "Raleway Roman";
+  text-align: right;
 }
 
 .education-item h4 {
-  font-size: 16px;
-  color: #333;
+  font-size: 15px;
+  text-transform: uppercase;
+  color: #232323;
+  font-weight: 800;
+  font-family: "Raleway Roman";
 }
 
 .education-item p {
-  font-size: 14px;
-  color: #666;
+  font-size: 10px;
+  letter-spacing: 0px;
+  line-height: 46px;
+  color: #232323;
+  font-family: "Raleway Roman";
+  text-align: left;
 }
 
 /* Job Experience Section */
@@ -133,27 +153,42 @@ body {
 
 .experience-item {
   display: flex;
-  margin-bottom: 20px;
+  align-items: flex-start; /* Выровнять содержимое по верхнему краю */
+  gap: 10px; /* Расстояние между колонками */
 }
 
 .experience-item h6 {
-  font-size: 16px;
-  color: #333;
+  font-size: 13px;
+  color: #232323;
+  font-weight: bold;
+  font-style: italic;
+  font-family: "Raleway Italic";
+  text-align: right;
 }
 
 .experience-item h5 {
-  font-size: 14px;
-  color: #ef1717;
+  font-size: 13px;
+  color: #e90000;
+  font-weight: bold;
+  font-family: "Raleway Roman";
+  text-align: right;
 }
 
 .experience-item h4 {
-  font-size: 16px;
-  color: #333;
+  font-size: 15px;
+  text-transform: uppercase;
+  color: #232323;
+  font-weight: 800;
+  font-family: "Raleway Roman";
 }
 
 .experience-item p {
-  font-size: 14px;
-  color: #666;
+  font-size: 10px;
+  letter-spacing: 0px;
+  line-height: 46px;
+  color: #232323;
+  font-family: "Raleway Roman";
+  text-align: left;
 }
 
 /* Right Column */
@@ -161,14 +196,13 @@ body {
   width: 40%;
   background-color: #f9f9f9;
   padding: 20px;
-  text-align: left;
+  box-sizing: border-box;
 }
 
 /* Photo */
 .photo img {
   width: 150px;
   height: 150px;
-  border-radius: 50%;
   margin-bottom: 20px;
 }
 
@@ -183,19 +217,25 @@ body {
 }
 
 .references h4 {
-  font-size: 14px;
-  font-weight: bold;
-  color: #333;
+  font-size: 15px;
+  text-transform: uppercase;
+  color: #232323;
+  font-weight: 800;
+  font-family: "Raleway Roman";
 }
 
 .references h5 {
-  font-size: 14px;
-  color: hsl(0, 97%, 55%);
+  font-size: 13px;
+  color: #e90000;
+  font-weight: bold;
+  font-style: italic;
+  font-family: "Raleway Italic";
 }
 
 .references p {
   font-size: 13px;
-  color: #666;
+  color: #232323;
+  font-family: "Raleway Roman";
 }
 
 /* Progress bars */
