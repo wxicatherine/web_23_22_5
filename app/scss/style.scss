@@ -49,6 +49,7 @@ body {
     color: #232323;
     font-family: "Raleway Roman";
     border-bottom: 2px solid #000000;
+   
 }
 
 .header p {
@@ -56,10 +57,59 @@ body {
     margin: 5px 0;
 }
 
-.icon {
+.icon1 {
+    position: relative;
+    font-size: 13px;
+    line-height: 17px;
+    color: #232323;
+    font-weight: bold;
+    font-family: "Raleway Roman";
+    width: 440px;
+height: 33px;
+background-color: #e9e9e9;
+    &::before {
+
+        position: absolute;
+        left: 0;
+        bottom: 0;
+    }
     margin-right: 5px;
 }
+.icon2 {
+    position: relative;
+    font-size: 13px;
+    line-height: 17px;
+    color: #232323;
+    font-weight: bold;
+    font-family: "Raleway Roman";
 
+    width: 210px;
+height: 33px;
+background-color: #e9e9e9;
+    &::before {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+    }
+    margin-right: 5px;
+}
+.icon3 {
+    position: relative;
+    font-size: 13px;
+    line-height: 17px;
+    color: #232323;
+    font-weight: bold;
+    font-family: "Raleway Roman";
+    width: 210px;
+height: 33px;
+background-color: #e9e9e9;
+    &::before {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+    }
+    margin-right: 5px;
+}
 /* About Section */
 .about h3 {
     font-size: 23px;
