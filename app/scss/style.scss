@@ -1,348 +1,186 @@
 /* General styling */
 body {
-    font-family: "Arial", sans-serif;
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-  }
-  
-  .resume-container {
-    display: flex;
-    max-width: 900px;
-    margin: 20px auto;
-    background: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-  }
-  
-  /*
-  .divq {
-      position: relative;
-  
-      &::before {
-          position: absolute;
-          left: 0;
-          bottom: 0;
-      }
-  }
-  */
-  
-  /* Left Column */
-  .left-column {
-    width: 60%;
-    box-sizing: border-box;
-  }
-  
-  /* Header */
-  .header {
-    h1 {
-      font-size: 50px;
-      line-height: 50px;
-      text-transform: uppercase;
-      color: #232323;
-      font-weight: 800;
-      font-family: "Raleway Roman";
+  font-family: "Arial", sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+.resume-container {
+  display: flex;
+  max-width: 900px;
+  margin: 20px auto;
+  background: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+/*
+.divq {
+    position: relative;
+
+    &::before {
+        position: absolute;
+        left: 0;
+        bottom: 0;
     }
-  
-    h1 .normal {
-      font-weight: 500;
-      font-style: italic;
-      font-size: 49px;
-    }
-  
-    h2 {
-      font-size: 18px;
-      letter-spacing: 5px;
-      text-transform: uppercase;
-      color: #232323;
-      font-family: "Raleway Roman";
-      display: flex;
-      align-items: end;
-      gap: 10px;
-  
-      &::after {
-        content: "";
-        flex-grow: 1;
-        height: 2px;
-        background-color: #000000;
-      }
-    }
-  
-    p {
-      font-size: 14px;
-      margin: 5px 0;
-    }
-  }
-  
-  .icon {
-    display: flex;
-    margin: 0 auto;
-    align-items: center;
-    padding: 10px;
-    font-size: 13px;
-    line-height: 17px;
+}
+*/
+
+/* Left Column */
+.left-column {
+  width: 60%;
+  box-sizing: border-box;
+}
+
+/* Header */
+.header {
+  h1 {
+    font-size: 50px;
+    line-height: 50px;
+    text-transform: uppercase;
     color: #232323;
-    font-weight: bold;
+    font-weight: 800;
     font-family: "Raleway Roman";
-    width: 440px;
-    height: 33px;
-    background-color: #e9e9e9;
-    justify-content: center;
-    text-align: center;
-  
-    i {
-      color: #e60000;
-      margin-right: 10px;
-    }
   }
-  
-  .icon1 {
-    width: 520px;
+
+  h1 .normal {
+    font-weight: 500;
+    font-style: italic;
+    font-size: 49px;
   }
-  
-  .icons-cont {
+
+  h2 {
+    font-size: 18px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: #232323;
+    font-family: "Raleway Roman";
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    gap: 30px;
-    margin-top: 30px;
-  }
-  
-  /* About Section */
-  .about {
-    h3 {
-      font-size: 23px;
-      text-transform: uppercase;
-      color: #232323;
-      font-weight: 800;
-      font-family: "Raleway Roman";
-      border-bottom: 2px solid #000000;
-    }
-  
-    p {
-      font-size: 15px;
-      line-height: 22px;
-      color: #232323;
-      font-family: "Raleway Roman";
-      text-align: left;
-  
-      .italic {
-        font-weight: 600;
-        font-style: italic;
-      }
+    align-items: end;
+    gap: 10px;
+
+    &::after {
+      content: "";
+      flex-grow: 1;
+      height: 2px;
+      background-color: #000000;
     }
   }
-  
-  /* Education Section */
-  .education {
-    h3 {
-      font-size: 23px;
-      text-transform: uppercase;
-      color: #232323;
-      font-weight: 800;
-      font-family: "Raleway Roman";
-      border-bottom: 2px solid #000000;
-    }
-  
-    .education-item {
-      display: flex;
-      align-items: flex-start;
-      gap: 10px;
-      margin-bottom: 20px;
-  
-      .left-smallcolumn {
-        width: 30%;
-        padding-right: 10px;
-        box-sizing: border-box;
-      }
-  
-      .right-smallcolumn {
-        width: 70%;
-        box-sizing: border-box;
-      }
-  
-      h6 {
-        font-size: 13px;
-        color: #232323;
-        font-weight: bold;
-        font-style: italic;
-        font-family: "Raleway Italic";
-        text-align: right;
-        margin: 0;
-      }
-  
-      h5 {
-        font-size: 13px;
-        color: #e90000;
-        font-weight: bold;
-        font-family: "Raleway Roman";
-        text-align: right;
-        margin: 0;
-      }
-  
-      h4 {
-        font-size: 15px;
-        text-transform: uppercase;
-        color: #232323;
-        font-weight: 800;
-        font-family: "Raleway Roman";
-        margin: 0;
-      }
-  
-      p {
-        font-size: 10px;
-        letter-spacing: 0px;
-        line-height: 24px;
-        color: #232323;
-        font-family: "Raleway Roman";
-        text-align: left;
-        margin: 0;
-      }
-    }
+
+  p {
+    font-size: 14px;
+    margin: 5px 0;
   }
-  
-  /* Job Experience Section */
-  .experience {
-    h3 {
-      font-size: 23px;
-      text-transform: uppercase;
-      color: #232323;
-      font-weight: 800;
-      font-family: "Raleway Roman";
-      border-bottom: 2px solid #000000;
-    }
-    .experience-item {
-      display: flex;
-      align-items: flex-start;
-      gap: 10px;
-      margin-bottom: 20px;
-  
-      .left-smallcolumn {
-        width: 30%;
-        padding-right: 10px;
-        box-sizing: border-box;
-      }
-  
-      .right-smallcolumn {
-        width: 70%;
-        box-sizing: border-box;
-      }
-  
-      h6 {
-        font-size: 13px;
-        color: #232323;
-        font-weight: bold;
-        font-style: italic;
-        font-family: "Raleway Italic";
-        text-align: right;
-        margin: 0;
-      }
-  
-      h5 {
-        font-size: 13px;
-        color: #e90000;
-        font-weight: bold;
-        font-family: "Raleway Roman";
-        text-align: right;
-        margin: 0;
-      }
-  
-      h4 {
-        font-size: 15px;
-        text-transform: uppercase;
-        color: #232323;
-        font-weight: 800;
-        font-family: "Raleway Roman";
-        margin: 0;
-      }
-  
-      p {
-        font-size: 10px;
-        letter-spacing: 0px;
-        line-height: 20px;
-        color: #232323;
-        font-family: "Raleway Roman";
-        margin: 0;
-      }
-  
-      .right-align {
-        text-align: right;
-      }
-    }
+}
+
+.icon {
+  display: flex;
+  margin: 0 auto;
+  align-items: center;
+  padding: 10px;
+  font-size: 13px;
+  line-height: 17px;
+  color: #232323;
+  font-weight: bold;
+  font-family: "Raleway Roman";
+  width: 440px;
+  height: 33px;
+  background-color: #e9e9e9;
+  justify-content: center;
+  text-align: center;
+
+  i {
+    color: #e60000;
+    margin-right: 10px;
   }
-  
-  /* Right Column */
-  .right-column {
-    width: 40%;
-    padding: 40px;
-    box-sizing: border-box;
-  }
-  
-  /* Photo */
-  .photo img {
-    width: 100%;
-    height: 100%;
-    margin-bottom: 20px;
-  }
-  
-  /* References, Skills, Languages, Hobbies Titles */
-  .about h3,
-  .references h3,
-  .skill h3,
-  .languages h3,
-  .hobbi h3,
-  .education h3,
-  .experience h3 {
+}
+
+.icon1 {
+  width: 520px;
+}
+
+.icons-cont {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+/* About Section */
+.about {
+  h3 {
     font-size: 23px;
     text-transform: uppercase;
     color: #232323;
     font-weight: 800;
-    border-bottom: 2px solid #000000;
     font-family: "Raleway Roman";
-    width: 100%;
-    padding-left: 5px;
+    border-bottom: 2px solid #000000;
   }
-  
-  .cont {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    width: 100%;
-  }
-  
-  .about p .italic {
-    font-weight: 600;
-    font-style: italic;
-  }
-  
-  .cont i {
-    border-bottom: 5px solid red;
-    padding: 0 4px 5px;
-    margin: 33px 0 19px;
+
+  p {
     font-size: 15px;
+    line-height: 22px;
+    color: #232323;
+    font-family: "Raleway Roman";
+    text-align: left;
+
+    .italic {
+      font-weight: 600;
+      font-style: italic;
+    }
   }
-  
-  .section .hobbies,
-  .section .skills {
+}
+
+/* Education Section */
+.education {
+  h3 {
+    font-size: 23px;
+    text-transform: uppercase;
+    color: #232323;
+    font-weight: 800;
+    font-family: "Raleway Roman";
+    border-bottom: 2px solid #000000;
+  }
+
+  .education-item {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-  
-  .section .hobbies .bar-container,
-  .section .skills .bar-container {
-    width: 135px;
-  }
-  
-  .hobbies span,
-  .skills span {
-    font-weight: 600;
-    font-size: 13px;
-    margin-bottom: 5px;
-  }
-  
-  .references {
+    align-items: flex-start;
+    gap: 10px;
+    margin-bottom: 20px;
+
+    .left-smallcolumn {
+      width: 30%;
+      padding-right: 10px;
+      box-sizing: border-box;
+    }
+
+    .right-smallcolumn {
+      width: 70%;
+      box-sizing: border-box;
+    }
+
+    h6 {
+      font-size: 13px;
+      color: #232323;
+      font-weight: bold;
+      font-style: italic;
+      font-family: "Raleway Italic";
+      text-align: right;
+      margin: 0;
+    }
+
+    h5 {
+      font-size: 13px;
+      color: #e90000;
+      font-weight: bold;
+      font-family: "Raleway Roman";
+      text-align: right;
+      margin: 0;
+    }
+
     h4 {
       font-size: 15px;
       text-transform: uppercase;
@@ -351,124 +189,313 @@ body {
       font-family: "Raleway Roman";
       margin: 0;
     }
-  
+
+    p {
+      font-size: 10px;
+      letter-spacing: 0px;
+      line-height: 24px;
+      color: #232323;
+      font-family: "Raleway Roman";
+      text-align: left;
+      margin: 0;
+    }
+  }
+}
+
+/* Job Experience Section */
+.experience {
+  h3 {
+    font-size: 23px;
+    text-transform: uppercase;
+    color: #232323;
+    font-weight: 800;
+    font-family: "Raleway Roman";
+    border-bottom: 2px solid #000000;
+  }
+  .experience-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    margin-bottom: 20px;
+
+    .left-smallcolumn {
+      width: 30%;
+      padding-right: 10px;
+      box-sizing: border-box;
+    }
+
+    .right-smallcolumn {
+      width: 70%;
+      box-sizing: border-box;
+    }
+
+    h6 {
+      font-size: 13px;
+      color: #232323;
+      font-weight: bold;
+      font-style: italic;
+      font-family: "Raleway Italic";
+      text-align: right;
+      margin: 0;
+    }
+
     h5 {
       font-size: 13px;
       color: #e90000;
       font-weight: bold;
-      font-style: italic;
-      font-family: "Raleway Italic";
+      font-family: "Raleway Roman";
+      text-align: right;
       margin: 0;
     }
-  
+
+    h4 {
+      font-size: 15px;
+      text-transform: uppercase;
+      color: #232323;
+      font-weight: 800;
+      font-family: "Raleway Roman";
+      margin: 0;
+    }
+
     p {
-      font-size: 13px;
+      font-size: 10px;
+      letter-spacing: 0px;
+      line-height: 20px;
       color: #232323;
       font-family: "Raleway Roman";
       margin: 0;
     }
-  
-    .gap {
-      margin-bottom: 20px;
+
+    .right-align {
+      text-align: right;
     }
   }
-  
-  /* Progress bars */
-  .bar-container {
-    position: relative;
-    width: 100%;
-    background-color: #ddd;
-    height: 5px;
-    border-radius: 15px;
+}
+
+/* Right Column */
+.right-column {
+  width: 40%;
+  padding: 40px;
+  box-sizing: border-box;
+}
+
+/* Photo */
+.photo img {
+  width: 100%;
+  height: 100%;
+  margin-bottom: 20px;
+}
+
+/* References, Skills, Languages, Hobbies Titles */
+.about h3,
+.references h3,
+.skill h3,
+.languages h3,
+.hobbi h3,
+.education h3,
+.experience h3 {
+  font-size: 23px;
+  text-transform: uppercase;
+  color: #232323;
+  font-weight: 800;
+  border-bottom: 2px solid #000000;
+  font-family: "Raleway Roman";
+  width: 100%;
+  padding-left: 5px;
+}
+
+.cont {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+}
+
+.about p .italic {
+  font-weight: 600;
+  font-style: italic;
+}
+
+.cont i {
+  border-bottom: 5px solid red;
+  padding: 0 4px 5px;
+  margin: 33px 0 19px;
+  font-size: 15px;
+}
+
+.section .hobbies,
+.section .skills {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.section .hobbies .bar-container,
+.section .skills .bar-container {
+  width: 135px;
+}
+
+.hobbies span,
+.skills span {
+  font-weight: 600;
+  font-size: 13px;
+  margin-bottom: 5px;
+}
+
+.references {
+  h4 {
+    font-size: 15px;
+    text-transform: uppercase;
+    color: #232323;
+    font-weight: 800;
+    font-family: "Raleway Roman";
+    margin: 0;
   }
-  
-  .bar {
-    height: 100%;
-    border-radius: 15px;
-    background-color: #e60000;
-    position: relative;
-  
-    &::after {
-      content: "";
-      position: absolute;
-      top: 50%;
-      right: 0;
-      transform: translate(50%, -50%);
-      width: 10px;
-      height: 10px;
-      background-color: #e60000;
-      border-radius: 50%;
-    }
+
+  h5 {
+    font-size: 13px;
+    color: #e90000;
+    font-weight: bold;
+    font-style: italic;
+    font-family: "Raleway Italic";
+    margin: 0;
   }
-  
-  .percent {
-    display: inline-block;
-    position: absolute;
-    right: 10px;
-    top: 10px;
-    font-weight: 600;
-    color: #e60000;
+
+  p {
+    font-size: 13px;
+    color: #232323;
+    font-family: "Raleway Roman";
+    margin: 0;
   }
-  
-  .circle-container {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+
+  .gap {
+    margin-bottom: 20px;
   }
-  .pie-chart {
-    position: relative;
-    width: 80px;
-    height: 80px;
-    margin: 10px auto;
-  }
-  
-  .pie-chart figcaption {
+}
+
+/* Progress bars */
+.bar-container {
+  position: relative;
+  width: 100%;
+  background-color: #ddd;
+  height: 5px;
+  border-radius: 15px;
+}
+
+.bar {
+  height: 100%;
+  border-radius: 15px;
+  background-color: #e60000;
+  position: relative;
+
+  &::after {
+    content: "";
     position: absolute;
     top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 15px;
-    text-align: center;
-    color: #333;
-    font-weight: bold;
+    right: 0;
+    transform: translate(50%, -50%);
+    width: 10px;
+    height: 10px;
+    background-color: #e60000;
+    border-radius: 50%;
   }
-  
-  /* English (95%) */
-  .pie-chart.english {
-    background: radial-gradient(
-        circle closest-side,
-        #f0f0f0 0,
-        #f0f0f0 90%,
-        transparent 90%,
-        transparent 100%,
-        #fff 0
-      ),
-      conic-gradient(from 50deg, #ff0000 0, #ff0000 95%, #ffffff 0, #ffffff 100%);
-  }
-  
-  /* German (60%) */
-  .pie-chart.german {
-    background: radial-gradient(
-        circle closest-side,
-        #f0f0f0 0,
-        #f0f0f0 90%,
-        transparent 90%,
-        transparent 100%,
-        #fff 0
-      ),
-      conic-gradient(from 130deg, #ff0000 0, #ff0000 60%, #ffffff 0, #ffffff 100%);
-  }
-  
-  /* Spanish (45%) */
-  .pie-chart.spanish {
-    background: radial-gradient(
-        circle closest-side,
-        #f0f0f0 0,
-        #f0f0f0 90%,
-        transparent 90%,
-        transparent 100%,
-        #fff 0
-      ),
-      conic-gradient(from 150deg, #ff0000 0, #ff0000 45%, #ffffff 0, #ffffff 100%);
-  }
-  
+}
+
+.percent {
+  display: inline-block;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  font-weight: 600;
+  color: #e60000;
+}
+
+.read-more-btn {
+  color: #e60000;
+  background-color: transparent;
+  border: 1px solid #e60000;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.read-more-btn:hover {
+  background-color: #e60000;
+  color: #ffffff;
+}
+
+.tooltip {
+  position: absolute;
+  background-color: #000;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+  z-index: 20;
+}
+
+.circle-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.pie-chart {
+  position: relative;
+  width: 80px;
+  height: 80px;
+  margin: 10px auto;
+}
+
+.pie-chart figcaption {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 15px;
+  text-align: center;
+  color: #333;
+  font-weight: bold;
+}
+
+/* English (95%) */
+.pie-chart.english {
+  background: radial-gradient(
+      circle closest-side,
+      #f0f0f0 0,
+      #f0f0f0 90%,
+      transparent 90%,
+      transparent 100%,
+      #fff 0
+    ),
+    conic-gradient(from 50deg, #ff0000 0, #ff0000 95%, #ffffff 0, #ffffff 100%);
+}
+
+/* German (60%) */
+.pie-chart.german {
+  background: radial-gradient(
+      circle closest-side,
+      #f0f0f0 0,
+      #f0f0f0 90%,
+      transparent 90%,
+      transparent 100%,
+      #fff 0
+    ),
+    conic-gradient(from 130deg, #ff0000 0, #ff0000 60%, #ffffff 0, #ffffff 100%);
+}
+
+/* Spanish (45%) */
+.pie-chart.spanish {
+  background: radial-gradient(
+      circle closest-side,
+      #f0f0f0 0,
+      #f0f0f0 90%,
+      transparent 90%,
+      transparent 100%,
+      #fff 0
+    ),
+    conic-gradient(from 150deg, #ff0000 0, #ff0000 45%, #ffffff 0, #ffffff 100%);
+}
