@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /* General styling */
 body {
   font-family: "Arial", sans-serif;
@@ -43,26 +42,37 @@ body {
   font-weight: 800;
   font-family: "Raleway Roman";
 }
-
+.header h1 .normal {
+  font-weight: 500;
+  font-style: italic;
+  font-size: 49px;
+}
 .header h2 {
   font-size: 18px;
   letter-spacing: 5px;
   text-transform: uppercase;
   color: #232323;
   font-family: "Raleway Roman";
-  border-bottom: 2px solid #000000;
+  display: flex;
+  align-items: end;
+  gap: 10px;
 }
-
+.header h2::after {
+  content: "";
+  flex-grow: 1;
+  height: 2px;
+  background-color: #000000;
+}
 .header p {
   font-size: 14px;
   margin: 5px 0;
 }
 
-.icon1 {
+.icon {
   display: flex;
+  margin: 0 auto;
   align-items: center;
   padding: 10px;
-  position: relative;
   font-size: 13px;
   line-height: 17px;
   color: #232323;
@@ -71,55 +81,24 @@ body {
   width: 440px;
   height: 33px;
   background-color: #e9e9e9;
+  justify-content: center;
+  text-align: center;
 }
-.icon1::before {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-}
-
-.icon2 {
-  display: flex;
-  align-items: center;
-  padding: 10px;
-  position: relative;
-  font-size: 13px;
-  line-height: 17px;
-  color: #232323;
-  font-weight: bold;
-  font-family: "Raleway Roman";
-  width: 210px;
-  height: 33px;
-  background-color: #e9e9e9;
-  width: 50%;
-  box-sizing: border-box;
-}
-.icon2::before {
-  position: absolute;
-  left: 0;
-  bottom: 0;
+.icon i {
+  color: #e60000;
+  margin-right: 10px;
 }
 
-.icon3 {
-  display: flex;
-  align-items: center;
-  padding: 10px;
-  position: relative;
-  font-size: 13px;
-  line-height: 17px;
-  color: #232323;
-  font-weight: bold;
-  font-family: "Raleway Roman";
-  width: 210px;
-  height: 33px;
-  background-color: #e9e9e9;
-  width: 50%;
-  box-sizing: border-box;
+.icon1 {
+  width: 520px;
 }
-.icon3::before {
-  position: absolute;
-  left: 0;
-  bottom: 0;
+
+.icons-cont {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 30px;
+  margin-top: 30px;
 }
 
 /* About Section */
@@ -131,13 +110,16 @@ body {
   font-family: "Raleway Roman";
   border-bottom: 2px solid #000000;
 }
-
 .about p {
   font-size: 15px;
   line-height: 22px;
   color: #232323;
   font-family: "Raleway Roman";
   text-align: left;
+}
+.about p .italic {
+  font-weight: 600;
+  font-style: italic;
 }
 
 /* Education Section */
@@ -149,56 +131,54 @@ body {
   font-family: "Raleway Roman";
   border-bottom: 2px solid #000000;
 }
-
-.education-item {
+.education .education-item {
   display: flex;
-  align-items: flex-start; /* Выровнять содержимое по верхнему краю */
-  gap: 10px; /* Расстояние между колонками */
+  align-items: flex-start;
+  gap: 10px;
+  margin-bottom: 20px;
 }
-
-.left-smallcolumn {
-  width: 30%; /* Измените при необходимости */
-  padding-right: 10px; /* Добавьте отступ справа */
-  box-sizing: border-box; /* Убедитесь, что отступы учитываются в ширине */
-}
-
-.right-smallcolumn {
-  width: 70%; /* Измените при необходимости */
+.education .education-item .left-smallcolumn {
+  width: 30%;
+  padding-right: 10px;
   box-sizing: border-box;
 }
-
-.education-item h6 {
+.education .education-item .right-smallcolumn {
+  width: 70%;
+  box-sizing: border-box;
+}
+.education .education-item h6 {
   font-size: 13px;
   color: #232323;
   font-weight: bold;
   font-style: italic;
   font-family: "Raleway Italic";
   text-align: right;
+  margin: 0;
 }
-
-.education-item h5 {
+.education .education-item h5 {
   font-size: 13px;
   color: #e90000;
   font-weight: bold;
   font-family: "Raleway Roman";
   text-align: right;
+  margin: 0;
 }
-
-.education-item h4 {
+.education .education-item h4 {
   font-size: 15px;
   text-transform: uppercase;
   color: #232323;
   font-weight: 800;
   font-family: "Raleway Roman";
+  margin: 0;
 }
-
-.education-item p {
+.education .education-item p {
   font-size: 10px;
   letter-spacing: 0px;
-  line-height: 46px;
+  line-height: 24px;
   color: #232323;
   font-family: "Raleway Roman";
   text-align: left;
+  margin: 0;
 }
 
 /* Job Experience Section */
@@ -210,70 +190,126 @@ body {
   font-family: "Raleway Roman";
   border-bottom: 2px solid #000000;
 }
-
-.experience-item {
+.experience .experience-item {
   display: flex;
-  align-items: flex-start; /* Выровнять содержимое по верхнему краю */
-  gap: 10px; /* Расстояние между колонками */
+  align-items: flex-start;
+  gap: 10px;
+  margin-bottom: 20px;
 }
-
-.experience-item h6 {
+.experience .experience-item .left-smallcolumn {
+  width: 30%;
+  padding-right: 10px;
+  box-sizing: border-box;
+}
+.experience .experience-item .right-smallcolumn {
+  width: 70%;
+  box-sizing: border-box;
+}
+.experience .experience-item h6 {
   font-size: 13px;
   color: #232323;
   font-weight: bold;
   font-style: italic;
   font-family: "Raleway Italic";
   text-align: right;
+  margin: 0;
 }
-
-.experience-item h5 {
+.experience .experience-item h5 {
   font-size: 13px;
   color: #e90000;
   font-weight: bold;
   font-family: "Raleway Roman";
   text-align: right;
+  margin: 0;
 }
-
-.experience-item h4 {
+.experience .experience-item h4 {
   font-size: 15px;
   text-transform: uppercase;
   color: #232323;
   font-weight: 800;
   font-family: "Raleway Roman";
+  margin: 0;
 }
-
-.experience-item p {
+.experience .experience-item p {
   font-size: 10px;
   letter-spacing: 0px;
-  line-height: 46px;
+  line-height: 20px;
   color: #232323;
   font-family: "Raleway Roman";
-  text-align: left;
+  margin: 0;
+}
+.experience .experience-item .right-align {
+  text-align: right;
 }
 
 /* Right Column */
 .right-column {
   width: 40%;
-  background-color: #f9f9f9;
-  padding: 20px;
+  padding: 40px;
   box-sizing: border-box;
 }
 
 /* Photo */
 .photo img {
-  width: 150px;
-  height: 150px;
+  width: 100%;
+  height: 100%;
   margin-bottom: 20px;
 }
 
 /* References, Skills, Languages, Hobbies Titles */
-.references h3, .skills h3, .languages h3, .hobbies h3 {
+.about h3,
+.references h3,
+.skill h3,
+.languages h3,
+.hobbi h3,
+.education h3,
+.experience h3 {
   font-size: 23px;
   text-transform: uppercase;
   color: #232323;
   font-weight: 800;
   border-bottom: 2px solid #000000;
   font-family: "Raleway Roman";
+  width: 100%;
+  padding-left: 5px;
+}
+
+.cont {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+}
+
+.about p .italic {
+  font-weight: 600;
+  font-style: italic;
+}
+
+.cont i {
+  border-bottom: 5px solid red;
+  padding: 0 4px 5px;
+  margin: 33px 0 19px;
+  font-size: 15px;
+}
+
+.section .hobbies,
+.section .skills {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.section .hobbies .bar-container,
+.section .skills .bar-container {
+  width: 135px;
+}
+
+.hobbies span,
+.skills span {
+  font-weight: 600;
+  font-size: 13px;
+  margin-bottom: 5px;
 }
 
 .references h4 {
@@ -282,109 +318,97 @@ body {
   color: #232323;
   font-weight: 800;
   font-family: "Raleway Roman";
+  margin: 0;
 }
-
 .references h5 {
   font-size: 13px;
   color: #e90000;
   font-weight: bold;
   font-style: italic;
   font-family: "Raleway Italic";
+  margin: 0;
 }
-
 .references p {
   font-size: 13px;
   color: #232323;
   font-family: "Raleway Roman";
+  margin: 0;
+}
+.references .gap {
+  margin-bottom: 20px;
 }
 
 /* Progress bars */
 .bar-container {
+  position: relative;
   width: 100%;
   background-color: #ddd;
+  height: 5px;
   border-radius: 15px;
-  margin-top: 5px;
 }
 
 .bar {
-  height: 10px;
+  height: 100%;
   border-radius: 15px;
   background-color: #e60000;
+  position: relative;
+}
+.bar::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translate(50%, -50%);
+  width: 10px;
+  height: 10px;
+  background-color: #e60000;
+  border-radius: 50%;
 }
 
-/* Circular Progress Bars for Languages */
-/* Circular Progress Bars */
+.percent {
+  display: inline-block;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  font-weight: 600;
+  color: #e60000;
+}
+
 .circle-container {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  margin-top: 20px;
 }
 
-.circle {
-  width: 80px; /* Зменшена ширина */
-  height: 80px; /* Зменшена висота */
+.pie-chart {
   position: relative;
-  border-radius: 50%;
-  background-color: #f4f4f4;
+  width: 80px;
+  height: 80px;
+  margin: 10px auto;
+}
+
+.pie-chart figcaption {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 15px;
   text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 16px; /* Зменшений розмір шрифту */
+  color: #333;
   font-weight: bold;
-  color: #333;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Зменшена тінь */
 }
 
-.circle:before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border-radius: 50%;
-  border: 6px solid #aba5a5; /* Зменшена товщина рамки */
+/* English (95%) */
+.pie-chart.english {
+  background: radial-gradient(circle closest-side, #f0f0f0 0, #f0f0f0 90%, transparent 90%, transparent 100%, #fff 0), conic-gradient(from 50deg, #ff0000 0, #ff0000 95%, #ffffff 0, #ffffff 100%);
 }
 
-/* Styling for English Language Circle */
-.circle.english:before {
-  border-color: #e60000 transparent transparent transparent;
-  transform: rotate(342deg);
+/* German (60%) */
+.pie-chart.german {
+  background: radial-gradient(circle closest-side, #f0f0f0 0, #f0f0f0 90%, transparent 90%, transparent 100%, #fff 0), conic-gradient(from 130deg, #ff0000 0, #ff0000 60%, #ffffff 0, #ffffff 100%);
 }
 
-/* Styling for German Language Circle */
-.circle.german:before {
-  border-color: #e60000 transparent transparent transparent;
-  transform: rotate(216deg);
-}
-
-/* Styling for Spanish Language Circle */
-.circle.spanish:before {
-  border-color: #e60000 transparent transparent transparent;
-  transform: rotate(162deg);
-}
-
-/* Adding the Percentage Label */
-.circle .label {
-  position: absolute;
-  font-size: 14px; /* Зменшений розмір шрифту */
-  color: #333;
-}
-
-/* Label position for the circle */
-.label {
-  position: absolute;
-  bottom: -15px; /* Коригування відступу для меншого круга */
-  font-size: 14px;
-  color: #333;
-}
-
-/* Additional Styling for Circle Container */
-.circle-container {
-  display: flex;
-  justify-content: space-between;
-  padding: 0 10px;
-  width: 100%;
+/* Spanish (45%) */
+.pie-chart.spanish {
+  background: radial-gradient(circle closest-side, #f0f0f0 0, #f0f0f0 90%, transparent 90%, transparent 100%, #fff 0), conic-gradient(from 150deg, #ff0000 0, #ff0000 45%, #ffffff 0, #ffffff 100%);
 }
