@@ -19,9 +19,8 @@
     "gulp-uglify": "^3.0.2"
   },
   "devDependencies": {
-  "gulp": "^4.0.2",
-  "gulp-sass": "^5.1.0",
-  "sass": "^1.66.0"
-   }
- 
+    "gulp": "^4.0.2",
+    "gulp-sass": "^5.1.0",
+    "sass": "^1.81.0"
+  }
 }
