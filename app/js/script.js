@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
       const width = bar.style.width;
       bar.style.width = "0";
       setTimeout(() => {
-        bar.style.transition = "width 2s";
+        bar.style.transition = "width 5s";
         bar.style.width = width;
       }, 300);
     });

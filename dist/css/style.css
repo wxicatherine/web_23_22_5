@@ -374,6 +374,34 @@ body {
   color: #e60000;
 }
 
+.read-more-btn {
+  color: #e60000;
+  background-color: transparent;
+  border: 1px solid #e60000;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.read-more-btn:hover {
+  background-color: #e60000;
+  color: #ffffff;
+}
+
+.tooltip {
+  position: absolute;
+  background-color: #000;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+  z-index: 20;
+}
+
 .circle-container {
   display: flex;
   justify-content: space-around;
