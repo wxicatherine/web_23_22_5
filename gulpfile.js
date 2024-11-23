@@ -42,20 +42,35 @@ gulp.task("images", () => {
     .pipe(browserSync.stream());
 });
 
-// Таск для запуску сервера і спостереження за файлами
+// Таск для data.json
+gulp.task("data", () => {
+  return gulp
+    .src("./app/data/**/*.json")
+    .pipe(gulp.dest("./dist/data"))
+    .on("end", browserSync.reload);
+});
+
+// Таск для запуску сервера
 gulp.task("serve", () => {
   browserSync.init({
     server: {
-      baseDir: "./dist", // Запуск сервера із папки dist
+      baseDir: "./dist",
     },
+    reloadDebounce: 1000,
+    injectChanges: true,
+    reloadOnRestart: true,
+    notify: false,
   });
 
-  // Слідкувати за змінами у файлах і запускати відповідні таски
   gulp.watch("./app/**/*.html", gulp.series("html"));
   gulp.watch("./app/scss/**/*.scss", gulp.series("scss"));
   gulp.watch("./app/js/**/*.js", gulp.series("js"));
   gulp.watch("./app/img/**/*", gulp.series("images"));
+  gulp.watch("./app/data/**/*.json", gulp.series("data"));
 });
 
 // Таск за замовчуванням (виконується при запуску gulp)
-gulp.task("default", gulp.series("html", "scss", "js", "images", "serve"));
+gulp.task(
+  "default",
+  gulp.series("html", "scss", "js", "images", "data", "serve")
+);
