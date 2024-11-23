@@ -7,6 +7,8 @@
     <title>Resume - Kevin C. Silva</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
 </head>
 <body>
     <div class="resume-container">
@@ -14,13 +16,13 @@
         <div class="left-column">
             <!-- Header -->
             <div class="header">
-                <h1>Kevin C. <span class="normal">Silva</span></h1>
-                <h2>Graphic & Web Designer</h2>
+                <h1></h1>
+                <h2></h2>
                
-                <div class="icon icon1"><i class="fa-solid fa-location-dot"></i> 769 Prudence Street Lincoln Park, MI 48146 </div>
+                <div class="icon icon1"><i class="fa-solid fa-location-dot"></i></div>
                 <div class="icons-cont">
-                    <div class="icon icon2"><i class="fa-solid fa-phone-volume"></i>  +1-718-310-5588</div>
-                    <div class="icon icon3"><i class="fa-solid fa-globe"></i> www.yourwebsite.com </div>
+                    <div class="icon icon2"><i class="fa-solid fa-phone-volume"></i></div>
+                    <div class="icon icon3"><i class="fa-solid fa-globe"></i> </div>
                 </div>
              
             </div>
@@ -31,7 +33,7 @@
                     <i class="fa-solid fa-user-tie"></i>
                     <h3> About Me</h3>
                 </div>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. <span class="italic">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</span> When an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting.</p>
+                <p><span class="italic"></span></p>
             </section>
 
             <!-- Education -->
@@ -40,64 +42,11 @@
                     <i class="fa-solid fa-graduation-cap"></i>
                     <h3> Education</h3>
                 </div>
-                <div class="education-item">
-                    <div class="left-smallcolumn">
-                    <h6>Stanford University</h6>
-                    <h5>2011 - 2013</h5>
-                    </div>
-                    <div class="right-smallcolumn">
-                    <h4>Master Degree Graduate </h4>
-                    <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry.  When an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
-                    </div>
-                </div>
-                <div class="education-item">
-                    <div class="left-smallcolumn">
-                    <h6>Chicago University</h6>
-                    <h5>2007 - 2010</h5>
-                </div>
-                <div class="right-smallcolumn">
-                    <h4>Bachelor Degree </h4>
-                    <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry.  When an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                </div>
-                </div>
-            </section><!-- Job Experience -->
+            </section>
             <section class="experience">
                 <div class="cont">
                     <i class="fa-solid fa-briefcase"></i>
                     <h3> Job Experience</h3>
-                </div>
-                <div class="experience-item">
-                    <div class="left-smallcolumn">
-                    <h6>Creative Agency </h6>
-                    <p class="right-align">Chicago </p>
-                    <h5>2020 - Present</h5>
-                     </div>
-                     <div class="right-smallcolumn">
-                    <h4>Senior Web Designer</h4>
-                    <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. </p>
-                </div>
-                </div>
-                <div class="experience-item">
-                    <div class="left-smallcolumn">
-                    <h6>Creative Market </h6>
-                    <p class="right-align">United Kingdom </p>
-                    <h5>2015 - 2020</h5>
-                    </div>
-                    <div class="right-smallcolumn">
-                    <h4> Graphic Designer</h4>
-                    <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. </p>
-               </div>
-                </div>
-                <div class="experience-item">
-                    <div class="left-smallcolumn">
-                    <h6>Marketing Agency </h6>
-                    <p class="right-align">United Kingdom </p>
-                    <h5>2013 - 2015</h5>
-                    </div>
-                    <div class="right-smallcolumn">
-                    <h4>Marketing Manager</h4>
-                    <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. </p>
-               </div>
                 </div>
             </section>
         </div>
@@ -117,101 +66,38 @@
                     <h3> References</h3>
                 </div>
                 
-                <div class="gap">
-                    <h4>Darwin B. Magana</h4>
-                    <h5>2813 Shobe Lane Mancos,CO.</h5>
-                    <p>Tel: +1-970-533-3393</p>
-                    <p>Email: www.yourwebsite.com</p>
-                </div>
-                <div class="gap">
-                    <h4>Robert J. Belvin</h4>
-                    <h5>2119 Fairfax Drive Newark,HJ.</h5>
-                    <p>Tel: +1-908-987-5103</p>
-                    <p>Email: www.yourwebsite.com</p>
-                </div>
             </section>
 
-            <div class="section">
+            <div id="skills-section" class="section">
                 <div class="skill">
                     <div class="cont">
                         <i class="fa-solid fa-chart-pie"></i>
                         <h3>Skills</h3>
                     </div>
                 </div>
-                <div class="skills">
-                    <span>Adobe Photoshop</span>
-                    <div class="bar-container"><div class="bar" style="width: 85%;"></div></div>
-                </div>
-                <div class="skills">
-                    <span>Adobe Illustrator</span>
-                    <div class="bar-container"><div class="bar" style="width: 70%;"></div></div>
-                </div>
-                <div class="skills">
-                    <span>Microsoft Word</span>
-                    <div class="bar-container"><div class="bar" style="width: 90%;"></div></div>
-                </div>
-                <div class="skills">
-                    <span>Microsoft PowerPoint</span>
-                    <div class="bar-container"><div class="bar" style="width: 90%;"></div></div>
-                </div>
-                <div class="skills">
-                    <span>HTML5/CSS3</span>
-                    <div class="bar-container"><div class="bar" style="width: 65%;"></div></div>
-                </div>
+                <div id="skills-container"></div>
             </div>
-
-            <!-- Languages -->
-            <div class="container">
+            
+            <div id="languages-section" class="container">
                 <div class="languages">
                     <div class="cont">
                         <i class="fa-solid fa-earth-americas"></i>
                         <h3>LANGUAGES</h3>
                     </div>
                 </div>
-                <div class="circle-container">
-                    <figure class="pie-chart english">
-                        <figcaption>95%<br />English</figcaption>
-                    </figure>
-                      
-                    <figure class="pie-chart german">
-                        <figcaption>60%<br />German</figcaption>
-                    </figure>
-                      
-                    <figure class="pie-chart spanish">
-                        <figcaption>45%<br />Spanish</figcaption>
-                    </figure>
-                </div>
+                <div id="languages-container" class="circle-container"></div>
             </div>
-        
-            <!-- Hobbies -->
-            <div class="section">
+            
+            <div id="hobbies-section" class="section">
                 <div class="hobbi">
                     <div class="cont">
-                        <i class="fa-solid fa-flag-checkered"></i>                    
+                        <i class="fa-solid fa-flag-checkered"></i>
                         <h3>Hobbies</h3>
                     </div>
                 </div>
-                <div class="hobbies">
-                    <span>Book Reading</span>
-                    <div class="bar-container"><div class="bar" style="width: 85%;"></div></div>
-                </div>
-                <div class="hobbies">
-                    <span>Travelling</span>
-                    <div class="bar-container"><div class="bar" style="width: 80%;"></div></div>
-                </div>
-                <div class="hobbies">
-                    <span>Playing Chess</span>
-                    <div class="bar-container"><div class="bar" style="width: 70%;"></div></div>
-                </div>
-                <div class="hobbies">
-                    <span>Painting</span>
-                    <div class="bar-container"><div class="bar" style="width: 60%;"></div></div>
-                </div>
-                <div class="hobbies">
-                    <span>Graphic Design</span>
-                    <div class="bar-container"><div class="bar" style="width: 50%;"></div></div>
-                </div>
-        </div>
+                <div id="hobbies-container"></div>
+            </div>
+            
     </div>
     <script src="js/script.js"></script>
 </body>
