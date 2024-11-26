@@ -21,7 +21,7 @@ function loadDataWithXMLHttpRequest() {
   xhr.send();
 }
 
-fetch("http://192.168.56.1:8080/data.json")
+fetch("http://127.0.0.1:8080/data.json")
   .then((response) => {
     if (!response.ok) {
       throw new Error(`HTTP error! status: ${response.status}`);

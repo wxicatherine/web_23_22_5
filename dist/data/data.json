@@ -1,0 +1,84 @@
+{
+    "header": {
+      "name": "Kevin C.",
+      "surname": "Rileys",
+      "title": "Graphic & Web Designer",
+      "location": "769 Prudence Street Lincoln Park, MI 48146",
+      "phone": "+1-718-310-5588",
+      "website": "www.yourwebsite.com"
+    },
+    "about": {
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. When an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting."
+    },
+    "education": [
+      {
+        "institution": "Stanford University",
+        "years": "2011 - 2013",
+        "degree": "Master Degree Graduate",
+        "details": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. When an unknown printer took a galley of type and scrambled it to make a type specimen book."
+      },
+      {
+        "institution": "Chicago University",
+        "years": "2007 - 2010",
+        "degree": "Bachelor Degree",
+        "details": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. When an unknown printer took a galley of type and scrambled it to make a type specimen book."
+      }
+    ],
+    "experience": [
+      {
+        "company": "Creative Agency",
+        "location": "Chicago",
+        "years": "2020 - Present",
+        "position": "Senior Web Designer",
+        "details": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
+      },
+      {
+        "company": "Creative Market",
+        "location": "United Kingdom",
+        "years": "2015 - 2020",
+        "position": "Graphic Designer",
+        "details": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
+      },
+      {
+        "company": "Marketing Agency",
+        "location": "United Kingdom",
+        "years": "2013 - 2015",
+        "position": "Marketing Manager",
+        "details": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
+      }
+    ],
+    "references": [
+      {
+        "name": "Darwin B. Magana",
+        "address": "2813 Shobe Lane Mancos, CO.",
+        "phone": "+1-970-533-3393",
+        "email": "www.yourwebsite.com"
+      },
+      {
+        "name": "Robert J. Belvin",
+        "address": "2119 Fairfax Drive Newark, HJ.",
+        "phone": "+1-908-987-5103",
+        "email": "www.yourwebsite.com"
+      }
+    ],
+    "skills": [
+      { "name": "Adobe Photoshop", "level": "85%" },
+      { "name": "Adobe Illustrator", "level": "70%" },
+      { "name": "Microsoft Word", "level": "90%" },
+      { "name": "Microsoft PowerPoint", "level": "90%" },
+      { "name": "HTML5/CSS3", "level": "65%" }
+    ],
+    "languages": [
+      { "name": "English", "proficiency": "95%" },
+      { "name": "German", "proficiency": "60%" },
+      { "name": "Spanish", "proficiency": "45%" }
+    ],
+    "hobbies": [
+      { "name": "Book Reading", "level": "85%" },
+      { "name": "Travelling", "level": "80%" },
+      { "name": "Playing Chess", "level": "70%" },
+      { "name": "Painting", "level": "60%" },
+      { "name": "Graphic Design", "level": "50%" }
+    ]
+  }
+  
